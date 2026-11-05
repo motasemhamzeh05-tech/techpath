@@ -6305,13 +6305,13 @@ const COURSE_EXTRA_SECTIONS = {
         ["html","HTML",".html","preview"],["css","CSS",".css","preview"],["javascript","JavaScript",".js","preview"],["typescript","TypeScript",".ts","source"],["python","Python",".py","source"],["c","C",".c","source"],["cpp","C++",".cpp","source"],["csharp","C#",".cs","source"],["java","Java",".java","source"],["kotlin","Kotlin",".kt","source"],["swift","Swift",".swift","source"],["go","Go",".go","source"],["rust","Rust",".rs","source"],["php","PHP",".php","source"],["ruby","Ruby",".rb","source"],["sql","SQL",".sql","source"],["bash","Bash",".sh","source"],["powershell","PowerShell",".ps1","source"],["json","JSON",".json","source"],["yaml","YAML",".yml","source"],["xml","XML",".xml","source"],["markdown","Markdown",".md","source"],["r","R",".r","source"],["matlab","MATLAB",".m","source"],["dart","Dart",".dart","source"],["scala","Scala",".scala","source"],["perl","Perl",".pl","source"],["lua","Lua",".lua","source"],["haskell","Haskell",".hs","source"],["elixir","Elixir",".ex","source"],["erlang","Erlang",".erl","source"],["clojure","Clojure",".clj","source"],["ocaml","OCaml",".ml","source"],["fsharp","F#",".fs","source"],["assembly","Assembly",".asm","source"],["solidity","Solidity",".sol","source"],["verilog","Verilog",".v","source"],["vhdl","VHDL",".vhd","source"],["dockerfile","Dockerfile","Dockerfile","source"],["makefile","Makefile","Makefile","source"],["graphql","GraphQL",".graphql","source"],["regex","Regular Expressions",".txt","source"],["plain","نص عادي",".txt","source"]
       ];
       const langOpts = languageOptions.map(x=>`<option value="${x[0]}" data-ext="${x[2]}" data-mode="${x[3]}">${x[1]}</option>`).join("");
-      return `<p class="tp-hub-kicker">PRACTICAL TOOLS · OFFLINE MODE</p><h1 class="tp-hub-title">أدوات عملية مطوّرة</h1><p class="tp-hub-desc">أربع أدوات تعمل داخل المتصفح دون مفتاح API أو رسوم استخدام. بعضها ينشئ مخرجات جاهزة، وبعضها يساعدك على التجربة والتشخيص خطوة بخطوة.</p>
+      return `<p class="tp-hub-kicker">PRACTICAL TOOLS</p><h1 class="tp-hub-title">أدوات عملية مطوّرة</h1><p class="tp-hub-desc">أربع أدوات تعمل داخل المتصفح دون مفتاح API أو رسوم استخدام. بعضها ينشئ مخرجات جاهزة، وبعضها يساعدك على التجربة والتشخيص خطوة بخطوة.</p>
       <div class="tp-hub-grid">
       <article class="tp-hub-card"><div class="tp-hub-badge">PROMPT WORKSHOP</div><h3>منشئ أوامر الذكاء الاصطناعي المطوّر</h3><p>حوّل فكرتك إلى طلب مفصل يحدد الدور والسياق والجمهور والقيود وشكل النتيجة ومعايير التحقق.</p><label class="tph-tool-label" for="tphPromptGoal">ما المهمة التي تريد إنجازها؟</label><textarea id="tphPromptGoal" class="tp-hub-field" placeholder="مثال: أريد بناء متجر إلكتروني بسيط باستخدام HTML وCSS وJavaScript"></textarea><div class="tph-tool-two"><div><label class="tph-tool-label" for="tphPromptRole">دور المساعد</label><select id="tphPromptRole" class="tph-tool-select"><option>مدرّس خبير</option><option>مطور برمجيات</option><option>مراجع كود</option><option>مصمم تجربة مستخدم</option><option>خبير تقنية معلومات</option><option>كاتب محتوى</option><option>مستشار مشروع</option></select></div><div><label class="tph-tool-label" for="tphPromptLevel">مستواك</label><select id="tphPromptLevel" class="tph-tool-select"><option>مبتدئ</option><option>متوسط</option><option>متقدم</option></select></div><div><label class="tph-tool-label" for="tphPromptTone">أسلوب الشرح</label><select id="tphPromptTone" class="tph-tool-select"><option>بسيط وواضح</option><option>تقني ومفصل</option><option>مختصر ومباشر</option><option>أكاديمي ومنظم</option></select></div><div><label class="tph-tool-label" for="tphPromptFormat">شكل النتيجة</label><select id="tphPromptFormat" class="tph-tool-select"><option>خطوات وأمثلة وتمرين</option><option>خطة عمل</option><option>كود مع شرح</option><option>مقارنة منظمة</option><option>قائمة فحص</option><option>سيناريو أو نص جاهز</option></select></div></div><label class="tph-tool-label" for="tphPromptContext">معلومات إضافية أو قيود (اختياري)</label><textarea id="tphPromptContext" class="tp-hub-field" placeholder="التقنيات المطلوبة، الميزانية، المدة، ما جربته..."></textarea><div class="tp-hub-row" style="margin-top:10px"><button class="tp-hub-btn" type="button" data-tph-tool="prompt">إنشاء Prompt احترافي</button></div></article>
       <article class="tp-hub-card"><div class="tp-hub-badge">VIDEO STUDIO PLANNER</div><h3>مخطط الفيديو وصانع السيناريو</h3><p>جهّز خطافًا وعنوانًا وسيناريو ومشاهد ونصًا للشاشة ووصفًا ودعوة للتفاعل.</p><label class="tph-tool-label" for="tphVideoTopic">موضوع الفيديو</label><input id="tphVideoTopic" class="tp-hub-search" placeholder="مثال: كيف تحمي حسابك من الاختراق؟"><div class="tph-tool-two"><div><label class="tph-tool-label" for="tphVideoPlatform">المنصة</label><select id="tphVideoPlatform" class="tph-tool-select"><option>TikTok / Reels / Shorts</option><option>YouTube فيديو طويل</option><option>Snapchat Spotlight</option></select></div><div><label class="tph-tool-label" for="tphVideoDuration">المدة</label><select id="tphVideoDuration" class="tph-tool-select"><option value="30">30 ثانية</option><option value="45" selected>45 ثانية</option><option value="60">60 ثانية</option><option value="90">90 ثانية</option><option value="180">3 دقائق</option></select></div></div><label class="tph-tool-label" for="tphVideoAudience">الجمهور المستهدف</label><input id="tphVideoAudience" class="tp-hub-search" placeholder="مثال: طلاب ومبتدئون"><label class="tph-tool-label" for="tphVideoGoal">هدف الفيديو</label><select id="tphVideoGoal" class="tph-tool-select"><option>تعليمي وتقديم معلومة</option><option>زيادة التفاعل</option><option>شرح منتج أو خدمة</option><option>قصة أو تجربة</option><option>توعية وتحذير</option></select><div class="tp-hub-row" style="margin-top:10px"><button class="tp-hub-btn" type="button" data-tph-tool="video">إنشاء خطة وسيناريو</button></div></article>
-      <article class="tp-hub-card" style="grid-column:1/-1"><div class="tp-hub-badge">MULTI-LANGUAGE CODE WORKBENCH</div><h3>محرر الأكواد ومعاينتها</h3><p>قوالب وأمثلة لعدد كبير من اللغات، مع إمكانية نسخ الكود وتنزيله. المعاينة والتنفيذ داخل المتصفح متاحان لكود الويب فقط؛ بقية اللغات يمكن تحريرها وعرضها وتنزيلها، لكنها تحتاج مترجمًا أو بيئة تشغيل خاصة.</p><label class="tph-tool-label" for="tphCodeLanguage">اختر لغة البرمجة</label><select id="tphCodeLanguage" class="tph-tool-select">${langOpts}</select><div class="tp-hub-row" style="margin:10px 0"><button class="tp-hub-btn secondary" type="button" data-tph-code-template>تحميل مثال جاهز</button><button class="tp-hub-btn secondary" type="button" data-tph-code-clear>مسح المحرر</button><button class="tp-hub-btn secondary" type="button" data-tph-code-download>تنزيل الملف</button><button class="tp-hub-btn secondary" type="button" data-tph-code-copy>نسخ الكود</button></div><textarea id="tphCodeEditor" class="tp-hub-field tph-editor" spellcheck="false" dir="ltr" placeholder="اختر لغة ثم اكتب الكود هنا..."></textarea><div class="tp-hub-row" style="margin-top:10px"><button class="tp-hub-btn" type="button" data-tph-tool="code-preview">معاينة / تشغيل</button><span class="tp-hub-tool-small" id="tphCodeMode">HTML وCSS وJavaScript يمكن تجربتها في إطار معزول.</span></div><iframe id="tphCodePreview" title="معاينة الكود" sandbox="allow-scripts" style="display:none;width:100%;height:280px;background:white;border:1px solid #334155;border-radius:10px;margin-top:12px"></iframe><div class="tph-tool-hint">تنبيه: لا تضع كلمات مرور أو مفاتيح API أو بيانات حقيقية في المحرر. تشغيل كود غير موثوق قد يكون خطرًا حتى داخل بيئة تجريبية؛ الإطار معزول عن ملفات الموقع ولا يملك صلاحية الوصول إلى الصفحة الأم.</div></article>
+      <article class="tp-hub-card" style="grid-column:1/-1"><div class="tp-hub-badge">MULTI-LANGUAGE CODE WORKBENCH</div><h3>محرر الأكواد ومعاينتها</h3><p>اكتب وجرب الكود داخل المحرر. معاينة HTML وCSS وJavaScript تعمل داخل المتصفح، أما اللغات البرمجية الأخرى فتُنفّذ عبر خادم تشغيل معزول بعد إعداد خدمة التنفيذ.</p><label class="tph-tool-label" for="tphCodeLanguage">اختر لغة البرمجة</label><select id="tphCodeLanguage" class="tph-tool-select">${langOpts}</select><div class="tp-hub-row" style="margin:10px 0"><button class="tp-hub-btn secondary" type="button" data-tph-code-template>تحميل مثال جاهز</button><button class="tp-hub-btn secondary" type="button" data-tph-code-clear>مسح المحرر</button><button class="tp-hub-btn secondary" type="button" data-tph-code-download>تنزيل الملف</button><button class="tp-hub-btn secondary" type="button" data-tph-code-copy>نسخ الكود</button></div><textarea id="tphCodeEditor" class="tp-hub-field tph-editor" spellcheck="false" dir="ltr" placeholder="اختر لغة ثم اكتب الكود هنا..."></textarea><label class="tph-tool-label" for="tphCodeInput">مدخلات البرنامج (اختياري)</label><textarea id="tphCodeInput" class="tp-hub-field" style="min-height:76px" dir="ltr" spellcheck="false" placeholder="اكتب هنا البيانات التي يطلبها البرنامج عبر input أو stdin..."></textarea><div class="tp-hub-row" style="margin-top:10px"><button class="tp-hub-btn" type="button" data-tph-tool="code-preview">معاينة / تشغيل</button><span class="tp-hub-tool-small" id="tphCodeMode">الويب يعمل داخل المتصفح؛ اللغات الأخرى تحتاج خادم تشغيل آمن.</span></div><iframe id="tphCodePreview" title="معاينة الكود" sandbox="allow-scripts" style="display:none;width:100%;height:280px;background:white;border:1px solid #334155;border-radius:10px;margin-top:12px"></iframe><div class="tph-tool-hint">تنبيه أمني: لا تضع كلمات مرور أو مفاتيح API أو بيانات حقيقية. تنفيذ اللغات الأخرى يتطلب خادم Piston معزولًا ومحدود الموارد، ولا تفتح الخدمة للعامة قبل إعداد الحماية وتحديد حصص الاستخدام.</div></article>
       <article class="tp-hub-card" style="grid-column:1/-1"><div class="tp-hub-badge">IT HELP DESK · OFFLINE KNOWLEDGE BASE</div><h3>مساعد البحث عن مشاكل الكمبيوتر</h3><p>اكتب المشكلة بطريقتك، مثل: «اللابتوب بصير صوته عالي وبسخن» أو «النت متصل بس المواقع ما بتفتح». سيبحث في قاعدة حلول محلية عن الأعراض والكلمات القريبة ويعرض خطوات فحص آمنة.</p><label class="tph-tool-label" for="tphItSearch">اكتب وصف المشكلة كما تظهر عندك</label><input id="tphItSearch" class="tp-hub-search" type="search" placeholder="مثال: الجهاز بعلق لما افتح أكثر من برنامج"><div class="tp-hub-row"><button class="tp-hub-btn" type="button" data-tph-tool="it-search">ابحث عن حل</button><button class="tp-hub-btn secondary" type="button" data-tph-it-examples>أمثلة لمشاكل شائعة</button></div><p class="tp-hub-tool-small">يمكن البحث بالعربية أو الإنجليزية. إذا لم يجد تطابقًا واضحًا سيعرض أسئلة تساعد على تحديد السبب بدل اختراع حل.</p><div id="tphItResults" aria-live="polite"></div></article>
-      </div><div id="tpHubToolResult" class="tp-hub-box" style="display:none"><div class="tp-hub-row" style="justify-content:space-between"><h3 style="margin:0">النتيجة</h3><button class="tp-hub-btn secondary" type="button" data-tph-copy-result>نسخ</button></div><textarea id="tpHubToolOutput" class="tp-hub-field" readonly style="margin-top:12px"></textarea></div><p class="tp-hub-muted">كل الأدوات تعمل محليًا دون AI أو API أو رسوم استخدام. قاعدة تشخيص IT إرشادية وليست فحصًا مباشرًا للجهاز، ولا تغطي كل الأعطال الممكنة.</p>`;
+      </div><div id="tpHubToolResult" class="tp-hub-box" style="display:none"><div class="tp-hub-row" style="justify-content:space-between"><h3 style="margin:0">النتيجة</h3><button class="tp-hub-btn secondary" type="button" data-tph-copy-result>نسخ</button></div><textarea id="tpHubToolOutput" class="tp-hub-field" readonly style="margin-top:12px"></textarea></div><p class="tp-hub-muted">منشئ الأوامر ومخطط الفيديو وقاعدة IT تعمل محليًا. تشغيل لغات البرمجة يعتمد على خادم التنفيذ الذي تضبطه وقد تترتب عليه تكلفة استضافة.</p>`;
     }
     function progressView() {
       const done=saved.done||[]; const pct=Math.round(done.length/totalLessons*100);
@@ -6362,6 +6362,107 @@ const COURSE_EXTRA_SECTIONS = {
       toolOutput=text; const result=main.querySelector("#tpHubToolResult"); const out=main.querySelector("#tpHubToolOutput");
       if(result&&out){result.style.display="block";out.value=text;result.scrollIntoView({behavior:"smooth",block:"nearest"});}
     }
+
+    const TP_RUNTIME_ALIASES = {
+      typescript:["typescript","ts","deno"],
+      python:["python","py"],
+      c:["c","gcc"],
+      cpp:["c++","cpp","g++"],
+      csharp:["csharp","c#","cs","dotnet"],
+      java:["java"],
+      kotlin:["kotlin","kt"],
+      swift:["swift"],
+      go:["go","golang"],
+      rust:["rust","rs"],
+      php:["php"],
+      ruby:["ruby","rb"],
+      sql:["sqlite3","sqlite","sql"],
+      bash:["bash","sh"],
+      powershell:["powershell","pwsh"],
+      r:["r"],
+      matlab:["octave","matlab"],
+      dart:["dart"],
+      scala:["scala"],
+      perl:["perl","pl"],
+      lua:["lua"],
+      haskell:["haskell","hs"],
+      elixir:["elixir","ex"],
+      erlang:["erlang","erl"],
+      clojure:["clojure","clj"],
+      ocaml:["ocaml","ml"],
+      fsharp:["fsharp","f#","fs"],
+      assembly:["nasm","assembly","asm"],
+      solidity:["solidity","solc"]
+    };
+    const TP_NON_EXECUTABLE_FORMATS = new Set(["json","yaml","xml","markdown","graphql","regex","plain","dockerfile","makefile","verilog","vhdl"]);
+    const TP_FILE_NAMES = {
+      typescript:"main.ts",python:"main.py",c:"main.c",cpp:"main.cpp",csharp:"Main.cs",java:"Main.java",
+      kotlin:"main.kt",swift:"main.swift",go:"main.go",rust:"main.rs",php:"main.php",ruby:"main.rb",
+      sql:"main.sql",bash:"main.sh",powershell:"main.ps1",r:"main.r",matlab:"main.m",dart:"main.dart",
+      scala:"Main.scala",perl:"main.pl",lua:"main.lua",haskell:"main.hs",elixir:"main.exs",
+      erlang:"main.erl",clojure:"main.clj",ocaml:"main.ml",fsharp:"main.fs",assembly:"main.asm",solidity:"main.sol"
+    };
+    async function tpFindRuntime(languageId) {
+      const response = await fetch("/api/runtimes", { method:"GET", headers:{ "Accept":"application/json" } });
+      const payload = await response.json().catch(()=>[]);
+      if (!response.ok) throw new Error(payload.message || "تعذر الاتصال بقائمة بيئات التشغيل.");
+      if (!Array.isArray(payload)) throw new Error("استجابة خادم التشغيل غير مفهومة.");
+      const aliases = (TP_RUNTIME_ALIASES[languageId] || [languageId]).map(x=>String(x).toLowerCase());
+      const found = payload.find(item => {
+        const names = [item.language, ...(Array.isArray(item.aliases)?item.aliases:[])].map(x=>String(x||"").toLowerCase());
+        return names.some(name=>aliases.includes(name));
+      });
+      if (!found) throw new Error("خادم التشغيل لا يحتوي حاليًا على مترجم لهذه اللغة. أضف Runtime اللغة إلى خادم Piston ثم أعد المحاولة.");
+      return found;
+    }
+    async function tpExecuteCode(languageId, source, stdin) {
+      if (source.length > 20000) throw new Error("حجم الكود أكبر من الحد المسموح (20,000 حرف).");
+      const runtime = await tpFindRuntime(languageId);
+      const filename = TP_FILE_NAMES[languageId] || "main.txt";
+      const response = await fetch("/api/execute", {
+        method:"POST",
+        headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+        body:JSON.stringify({
+          language:runtime.language,
+          version:runtime.version,
+          filename,
+          code:source,
+          stdin:String(stdin||"").slice(0,5000)
+        })
+      });
+      const result = await response.json().catch(()=>({message:"استجابة غير صالحة من خادم التنفيذ."}));
+      if (!response.ok) throw new Error(result.message || "فشل تنفيذ الكود.");
+      const compile = result.compile || {};
+      const run = result.run || {};
+      const sections = [];
+      if (compile.output || compile.stderr || compile.stdout) sections.push("=== COMPILER ===\n" + (compile.output || [compile.stdout,compile.stderr].filter(Boolean).join("\n")));
+      sections.push("=== OUTPUT ===\n" + (run.stdout || "(لا يوجد خرج نصي)"));
+      if (run.stderr) sections.push("=== ERRORS ===\n" + run.stderr);
+      if (run.signal) sections.push("=== SIGNAL ===\n" + run.signal);
+      sections.push("=== EXIT CODE ===\n" + (run.code === null || run.code === undefined ? "غير متاح" : run.code));
+      return sections.join("\n\n").slice(0,18000);
+    }
+    function tpValidateTextFormat(languageId, source) {
+      if (languageId === "json") {
+        JSON.parse(source);
+        return "JSON صحيح نحويًا ✓";
+      }
+      if (languageId === "regex") {
+        new RegExp(source);
+        return "تعبير Regex صالح نحويًا ✓";
+      }
+      if (languageId === "xml") {
+        const parsed = new DOMParser().parseFromString(source, "application/xml");
+        if (parsed.querySelector("parsererror")) throw new Error("صياغة XML غير صحيحة.");
+        return "XML صالح نحويًا ✓";
+      }
+      if (languageId === "markdown") return "معاينة Markdown كنص:\n\n" + source;
+      if (languageId === "yaml") return "YAML صيغة بيانات وليست برنامجًا قابلًا للتشغيل. يمكن تحريرها وتنزيلها؛ يلزم مدقق YAML منفصل للتحقق الكامل.";
+      if (languageId === "graphql") return "GraphQL يحتاج مخططًا وخادم GraphQL لتنفيذ الاستعلامات؛ الملف وحده لا يمثل برنامجًا مستقلًا.";
+      if (languageId === "dockerfile" || languageId === "makefile") return "هذا الملف يحتاج مشروعًا وبيئة بناء كاملة، ولا يمكن تشغيله كملف منفرد داخل محرر snippets.";
+      if (languageId === "verilog" || languageId === "vhdl") return "هذه لغات وصف عتاد وتحتاج أدوات محاكاة/تركيب متخصصة غير مضمّنة في خادم التنفيذ الحالي.";
+      return "هذه صيغة نصية وليست لغة تنفيذ مستقلة.";
+    }
     function openHub() { overlay.classList.add("tp-hub-open"); document.body.style.overflow="hidden"; render(); overlay.querySelector("#tpHubClose").focus(); }
     function closeHub() { overlay.classList.remove("tp-hub-open"); document.body.style.overflow=""; launcher.focus(); }
     launcher.addEventListener("click",openHub);
@@ -6369,6 +6470,17 @@ const COURSE_EXTRA_SECTIONS = {
     overlay.addEventListener("click",e=>{if(e.target===overlay)closeHub();});
     document.addEventListener("keydown",e=>{if(e.key==="Escape"&&overlay.classList.contains("tp-hub-open"))closeHub();});
     overlay.addEventListener("input",e=>{if(e.target.id==="tpHubSearch"){search=e.target.value;const pos=e.target.selectionStart;render();const next=main.querySelector("#tpHubSearch");if(next){next.focus();next.setSelectionRange(pos,pos);}}});
+    overlay.addEventListener("change", e=>{
+      if(e.target && e.target.id==="tphCodeLanguage"){
+        const lang=e.target.value;
+        const mode=main.querySelector("#tphCodeMode");
+        if(mode) mode.textContent=["html","css","javascript"].includes(lang)
+          ? "هذه اللغة تعمل داخل معاينة المتصفح المعزولة."
+          : (TP_NON_EXECUTABLE_FORMATS.has(lang)
+            ? "صيغة بيانات/وصف: يمكن التحقق من بعض الصيغ، وليس تشغيلها كبرنامج."
+            : "التشغيل يتطلب وجود Runtime هذه اللغة على خادم Piston.");
+      }
+    });
     overlay.addEventListener("click",async e=>{
       const navBtn=e.target.closest("[data-tph-nav]");
       if(navBtn){active=navBtn.dataset.tphNav;activeLesson=null;search="";render();main.scrollTop=0;return;}
@@ -6453,7 +6565,26 @@ const COURSE_EXTRA_SECTIONS = {
           if(["html","css","javascript"].includes(lang)){
             let src="";if(lang==="html")src=code;else if(lang==="css")src=`<style>${code}</style><main><h2>CSS Preview</h2><p class="sample">هذا نص تجريبي لمعاينة التنسيق.</p><button>زر تجريبي</button></main>`;else src=`<main><h2>JavaScript Preview</h2><p id="sample">اضغط الزر لتجربة JavaScript.</p><button id="run">تشغيل الحدث</button></main><script>${code}\n<\/script>`;
             frame.srcdoc=`<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:20px;line-height:1.7;color:#172033}main{max-width:850px;margin:auto}button{padding:9px 14px;cursor:pointer}.sample{padding:12px;border:1px solid #ddd}</style><body>${src}</body></html>`;frame.style.display="block";if(mode)mode.textContent="تم إرسال الكود إلى إطار تجريبي معزول.";frame.scrollIntoView({behavior:"smooth",block:"nearest"});setToolOutput(`تم تجهيز معاينة ${lang.toUpperCase()} داخل إطار معزول. إذا لم يظهر الناتج، افحص صياغة الكود وتعليمات التشغيل.`);
-          } else {if(frame){frame.style.display="none";}if(mode)mode.textContent="هذه اللغة تحتاج مترجمًا أو بيئة تشغيل خاصة؛ يمكنك تحرير الكود وتنزيله.";setToolOutput(`لغة ${codeLanguage?.selectedOptions[0]?.textContent||lang} مدعومة للتحرير والقوالب والتنزيل، لكنها لا تعمل داخل المتصفح مباشرة. نزّل الملف وافتحه في بيئة مناسبة للغة مثل VS Code مع المترجم أو runtime المطلوب. لم يتم تنفيذ الكود.`);}
+          } else {
+            if(frame){frame.style.display="none";}
+            const stdin = main.querySelector("#tphCodeInput")?.value || "";
+            if(TP_NON_EXECUTABLE_FORMATS.has(lang)){
+              try { setToolOutput(tpValidateTextFormat(lang,code)); }
+              catch(error) { setToolOutput("فشل التحقق من الملف:\n" + (error.message || String(error))); }
+              if(mode) mode.textContent="هذه صيغة بيانات/وصف؛ تم إجراء التحقق المتاح دون تشغيل برنامج.";
+              return;
+            }
+            if(mode) mode.textContent="جارٍ الاتصال بخادم التنفيذ المعزول...";
+            setToolOutput("جارٍ إرسال الكود إلى بيئة التشغيل الآمنة...");
+            try {
+              const output = await tpExecuteCode(lang,code,stdin);
+              if(mode) mode.textContent="اكتمل التنفيذ على خادم التشغيل.";
+              setToolOutput(output);
+            } catch(error) {
+              if(mode) mode.textContent="تعذر إكمال التنفيذ.";
+              setToolOutput("تعذر تشغيل الكود:\n" + (error.message || String(error)) + "\n\nتأكد من إعداد /api/runtimes و/api/execute وربطهما بخادم Piston، وأن Runtime اللغة مثبت.");
+            }
+          }
         }
         if(tool.dataset.tphTool==="it-search"){
           const query=main.querySelector("#tphItSearch")?.value.trim();if(!query){setItResults("اكتب وصف المشكلة أولًا، مثل: الجهاز بطيء أو الصوت لا يعمل.");return;}renderItSearch(query);
